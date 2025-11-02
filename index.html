@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrega IV — Projeto SPA Acessível (Visual Melhorado)</title>
+  <meta name="description" content="Projeto de entrega final: versionamento, acessibilidade e deploy.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 id="logo">Projeto Entrega IV</h1>
+      <div class="controls">
+        <button id="theme-toggle" aria-pressed="false" aria-label="Alternar tema">Tema</button>
+        <button id="contrast-toggle" aria-pressed="false" aria-label="Alternar alto contraste">Alto Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" role="main" class="container">
+    <section id="home" aria-labelledby="home-title">
+      <h2 id="home-title">Bem-vindo</h2>
+      <p>Esta é a versão final (Entrega IV) com práticas de acessibilidade, otimização e documentação.</p>
+      <div class="hero">
+        <img src="images/image01.jpg" alt="Ilustração placeholder 1" />
+        <img src="images/image02.jpg" alt="Ilustração placeholder 2" />
+        <img src="images/image03.jpg" alt="Ilustração placeholder 3" />
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre a entrega</h2>
+      <p>Implementação: GitFlow, commits semânticos, WCAG 2.1 AA, minificação e compressão.</p>
+      <ul>
+        <li>Branching: <code>main</code>, <code>develop</code>, <code>feature/*</code>, <code>release/*</code>, <code>hotfix/*</code></li>
+        <li>Contraste mínimo: 4.5:1 verificado nas cores padrão</li>
+        <li>Suporte a teclado e leitores de tela</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Demonstrações</h2>
+      <article>
+        <h3>Formulário acessível</h3>
+        <form id="demo-form" action="#" aria-describedby="form-desc" class="centered-form" novalidate>
+          <p id="form-desc">Formulário de demonstração com rótulos, descrição e validação.</p>
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+          <div class="form-actions">
+            <button type="submit" class="primary">Enviar</button>
+          </div>
+          <div id="form-message" role="status" aria-live="polite" tabindex="-1"></div>
+        </form>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contato</h2>
+      <p>Links e documentação no repositório.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <p>Entrega IV — Projeto educacional. &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js" defer></script>
+</body>
+</html>
